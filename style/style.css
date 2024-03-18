@@ -1,0 +1,111 @@
+/* CSS untuk membuat gambar dan tampilan lebih menarik */
+body { 
+    margin: 0;              /*pengaturan teksnya*/
+    font-family: 'Times New Roman', Times, serif, sans-serif;       
+    background-color: #958982;      
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;   /*membatasi lebar max*/
+    margin: 0 auto;     /*berikan jarak luar */
+    padding: 20px;      /*ruang*/
+    background-color: rgb(166, 145, 134); /* Warna latar belakang  */
+}
+
+.card {
+    flex: 1;
+    background-color: #c1bab3;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;     /*mengatur properti posisi elemen yang ada di kelas card*/
+}
+
+.card img {         /*mengatur ketentuan dari gambar yang dipilih*/
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {       /*edit untuk memperbesar gambar*/
+    transform: scale(1.1);
+}
+
+.text {                     /*untuk mengatur teks yang ada didalam kotak*/
+    padding: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(225, 230, 242, 0.875);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover .text {         /*warna yang digunakan ketika memperbesar gambar*/
+    background-color: rgba(235, 201, 181, 0.91);
+}
+
+.text h2 {                /*ketentuan dari text*/
+    margin-top: 0;
+    font-size: 25px;
+    color: #69432f;
+
+}
+
+.text p {
+    color: #0c0101;
+    line-height: 1.6;
+
+}
+
+h1 {            
+    color: rgb(45, 74, 22);
+    margin-top: 0;
+    font-size: 36px;
+}
+
+
+/*tampilan login*/
+.login-container {              /*mengatur container dari tampilan login*/
+    flex: 0.3;
+    padding: 20px;
+    background-color: #bcb4a5;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(218, 83, 83, 0.1);
+}
+.login-container h1 {   
+    margin-top: 0;
+    font-size: 25px;
+    color: #7d2f04;
+}
+.login-container label {            /*mengatur container label dari tampilan login*/
+    display: block;
+    margin-bottom: 10px;
+    color: #503310;
+}
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #613907;
+}
+.login-container button {           /*mengatur container button dari tampilan login*/
+    width: 100%;
+    padding: 10px;              
+    border: none;
+    border-radius: 5px;
+    background-color: #593c2c;
+    color: rgb(235, 229, 229);
+    cursor: pointer;
+}
+
+
+
